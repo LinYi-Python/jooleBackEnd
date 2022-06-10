@@ -1,0 +1,2877 @@
+{
+	"info": {
+		"_postman_id": "00fe1105-ff19-41db-889f-1059b3c376ee",
+		"name": "JOOLE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/ProductController/getProductType",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0MTMiLCJleHAiOjE2NTM0NDc3NjQsImlhdCI6MTY1MzQxMTc2NH0.VBfbvEvqiNVdhpLZzml_H1zLtobK-3dIGgGi2_WugGc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8081/joole/ProductController/getProductType",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"joole",
+						"ProductController",
+						"getProductType"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/ProductController/getProductType",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8081/joole/ProductController/getProductType",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"joole",
+								"ProductController",
+								"getProductType"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 May 2022 23:13:28 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"productTypeDetail\": \"Fans\",\n        \"createTime\": \"2022-05-17T09:15:47.000+0000\"\n    },\n    {\n        \"id\": 2,\n        \"productTypeDetail\": \"Air-condition\",\n        \"createTime\": \"2022-05-17T09:16:01.000+0000\"\n    },\n    {\n        \"id\": 3,\n        \"productTypeDetail\": \"coke\",\n        \"createTime\": \"2022-05-17T09:17:53.000+0000\"\n    },\n    {\n        \"id\": 15,\n        \"productTypeDetail\": \"TypeTest1\",\n        \"createTime\": \"2022-05-18T14:21:46.000+0000\"\n    },\n    {\n        \"id\": 22,\n        \"productTypeDetail\": \"TypeTest1\",\n        \"createTime\": \"2022-05-18T15:13:02.000+0000\"\n    },\n    {\n        \"id\": 26,\n        \"productTypeDetail\": \"TypeTest1\",\n        \"createTime\": \"2022-05-18T15:14:55.000+0000\"\n    },\n    {\n        \"id\": 30,\n        \"productTypeDetail\": \"TypeTest1\",\n        \"createTime\": \"2022-05-18T15:15:44.000+0000\"\n    },\n    {\n        \"id\": 34,\n        \"productTypeDetail\": null,\n        \"createTime\": null\n    },\n    {\n        \"id\": 35,\n        \"productTypeDetail\": \"testName\",\n        \"createTime\": \"2022-05-18T16:18:46.000+0000\"\n    },\n    {\n        \"id\": 36,\n        \"productTypeDetail\": \"testName\",\n        \"createTime\": \"2022-05-18T16:47:21.000+0000\"\n    },\n    {\n        \"id\": 37,\n        \"productTypeDetail\": \"testName\",\n        \"createTime\": \"2022-05-18T16:48:50.000+0000\"\n    },\n    {\n        \"id\": 38,\n        \"productTypeDetail\": \"TypeTest1\",\n        \"createTime\": \"2022-05-24T15:17:08.000+0000\"\n    },\n    {\n        \"id\": 39,\n        \"productTypeDetail\": \"TypeTest1\",\n        \"createTime\": \"2022-05-24T15:50:32.000+0000\"\n    },\n    {\n        \"id\": 40,\n        \"productTypeDetail\": \"TypeTest1\",\n        \"createTime\": \"2022-05-24T15:53:27.000+0000\"\n    },\n    {\n        \"id\": 41,\n        \"productTypeDetail\": \"TypeTest1\",\n        \"createTime\": \"2022-05-24T15:59:02.000+0000\"\n    },\n    {\n        \"id\": 42,\n        \"productTypeDetail\": \"TypeTest1\",\n        \"createTime\": \"2022-05-24T16:05:59.000+0000\"\n    },\n    {\n        \"id\": 43,\n        \"productTypeDetail\": \"TypeTest1\",\n        \"createTime\": \"2022-05-24T17:00:19.000+0000\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "ProductController/getAllProductFromProductType",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0MTAiLCJleHAiOjE2NTM0NDg1MDAsImlhdCI6MTY1MzQxMjUwMH0.6nSF9J6MEZEEUIGvrY4elvWU8b84Tzb4hwT2zywRWHI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8081/joole/ProductController/getAllProductFromProductType?ProductType=Fans",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"joole",
+						"ProductController",
+						"getAllProductFromProductType"
+					],
+					"query": [
+						{
+							"key": "ProductType",
+							"value": "Fans"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ProductController/getAllProductFromProductType",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8081/joole/ProductController/getAllProductFromProductType?ProductType=Fans",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"joole",
+								"ProductController",
+								"getAllProductFromProductType"
+							],
+							"query": [
+								{
+									"key": "ProductType",
+									"value": "Fans"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 May 2022 17:15:42 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Product1\",\n        \"productType\": {\n            \"id\": 1,\n            \"productTypeDetail\": \"Fans\",\n            \"createTime\": \"2022-05-17T09:15:47.000+0000\"\n        },\n        \"manufacturerDetailId\": {\n            \"id\": 1,\n            \"department\": \"HR\",\n            \"phone\": \"11111111\",\n            \"email\": \"hr@gmail.com\",\n            \"webUrl\": \"111.com\",\n            \"createTime\": \"2022-05-17T09:21:33.000+0000\",\n            \"updateTime\": \"2022-05-17T09:21:35.000+0000\"\n        },\n        \"modelYear\": 2000,\n        \"sale\": {\n            \"id\": 1,\n            \"name\": \"Yi\",\n            \"email\": \"Yi@gmail.com\",\n            \"phone\": \"111\",\n            \"webUrl\": \"yi.com\",\n            \"createTime\": \"2022-05-17T09:26:56.000+0000\",\n            \"updateTime\": \"2022-05-17T09:26:57.000+0000\"\n        },\n        \"brand\": \"Apple\",\n        \"createTime\": \"2022-05-17T09:15:14.000+0000\",\n        \"updateTime\": \"2022-05-17T09:15:17.000+0000\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Product2\",\n        \"productType\": {\n            \"id\": 1,\n            \"productTypeDetail\": \"Fans\",\n            \"createTime\": \"2022-05-17T09:15:47.000+0000\"\n        },\n        \"manufacturerDetailId\": {\n            \"id\": 2,\n            \"department\": \"RH\",\n            \"phone\": \"222222\",\n            \"email\": \"rh@gmail.com\",\n            \"webUrl\": \"222.com\",\n            \"createTime\": \"2022-05-17T09:22:00.000+0000\",\n            \"updateTime\": \"2022-05-17T09:22:02.000+0000\"\n        },\n        \"modelYear\": 2021,\n        \"sale\": {\n            \"id\": 2,\n            \"name\": \"vitor\",\n            \"email\": \"vitor@gmail.com\",\n            \"phone\": \"222\",\n            \"webUrl\": \"vitor.com\",\n            \"createTime\": \"2022-05-17T09:27:23.000+0000\",\n            \"updateTime\": \"2022-05-17T09:27:26.000+0000\"\n        },\n        \"brand\": \"Samsung\",\n        \"createTime\": \"2022-05-17T09:32:58.000+0000\",\n        \"updateTime\": \"2022-05-17T09:33:01.000+0000\"\n    },\n    {\n        \"id\": 42,\n        \"name\": \"testPost\",\n        \"productType\": {\n            \"id\": 1,\n            \"productTypeDetail\": \"Fans\",\n            \"createTime\": \"2022-05-17T09:15:47.000+0000\"\n        },\n        \"manufacturerDetailId\": {\n            \"id\": 1,\n            \"department\": \"HR\",\n            \"phone\": \"11111111\",\n            \"email\": \"hr@gmail.com\",\n            \"webUrl\": \"111.com\",\n            \"createTime\": \"2022-05-17T09:21:33.000+0000\",\n            \"updateTime\": \"2022-05-17T09:21:35.000+0000\"\n        },\n        \"modelYear\": 2077,\n        \"sale\": {\n            \"id\": 1,\n            \"name\": \"Yi\",\n            \"email\": \"Yi@gmail.com\",\n            \"phone\": \"111\",\n            \"webUrl\": \"yi.com\",\n            \"createTime\": \"2022-05-17T09:26:56.000+0000\",\n            \"updateTime\": \"2022-05-17T09:26:57.000+0000\"\n        },\n        \"brand\": \"ios\",\n        \"createTime\": \"2022-05-18T19:58:02.000+0000\",\n        \"updateTime\": \"2022-05-18T19:58:02.000+0000\"\n    },\n    {\n        \"id\": 43,\n        \"name\": \"testPost\",\n        \"productType\": {\n            \"id\": 1,\n            \"productTypeDetail\": \"Fans\",\n            \"createTime\": \"2022-05-17T09:15:47.000+0000\"\n        },\n        \"manufacturerDetailId\": {\n            \"id\": 1,\n            \"department\": \"HR\",\n            \"phone\": \"11111111\",\n            \"email\": \"hr@gmail.com\",\n            \"webUrl\": \"111.com\",\n            \"createTime\": \"2022-05-17T09:21:33.000+0000\",\n            \"updateTime\": \"2022-05-17T09:21:35.000+0000\"\n        },\n        \"modelYear\": 2077,\n        \"sale\": {\n            \"id\": 1,\n            \"name\": \"Yi\",\n            \"email\": \"Yi@gmail.com\",\n            \"phone\": \"111\",\n            \"webUrl\": \"yi.com\",\n            \"createTime\": \"2022-05-17T09:26:56.000+0000\",\n            \"updateTime\": \"2022-05-17T09:26:57.000+0000\"\n        },\n        \"brand\": \"ios\",\n        \"createTime\": \"2022-05-18T19:58:08.000+0000\",\n        \"updateTime\": \"2022-05-18T19:58:08.000+0000\"\n    },\n    {\n        \"id\": 44,\n        \"name\": \"testPost\",\n        \"productType\": {\n            \"id\": 1,\n            \"productTypeDetail\": \"Fans\",\n            \"createTime\": \"2022-05-17T09:15:47.000+0000\"\n        },\n        \"manufacturerDetailId\": {\n            \"id\": 1,\n            \"department\": \"HR\",\n            \"phone\": \"11111111\",\n            \"email\": \"hr@gmail.com\",\n            \"webUrl\": \"111.com\",\n            \"createTime\": \"2022-05-17T09:21:33.000+0000\",\n            \"updateTime\": \"2022-05-17T09:21:35.000+0000\"\n        },\n        \"modelYear\": 2077,\n        \"sale\": {\n            \"id\": 1,\n            \"name\": \"Yi\",\n            \"email\": \"Yi@gmail.com\",\n            \"phone\": \"111\",\n            \"webUrl\": \"yi.com\",\n            \"createTime\": \"2022-05-17T09:26:56.000+0000\",\n            \"updateTime\": \"2022-05-17T09:26:57.000+0000\"\n        },\n        \"brand\": \"ios\",\n        \"createTime\": \"2022-05-18T20:01:01.000+0000\",\n        \"updateTime\": \"2022-05-18T20:01:01.000+0000\"\n    },\n    {\n        \"id\": 45,\n        \"name\": \"testPost\",\n        \"productType\": {\n            \"id\": 1,\n            \"productTypeDetail\": \"Fans\",\n            \"createTime\": \"2022-05-17T09:15:47.000+0000\"\n        },\n        \"manufacturerDetailId\": {\n            \"id\": 1,\n            \"department\": \"HR\",\n            \"phone\": \"11111111\",\n            \"email\": \"hr@gmail.com\",\n            \"webUrl\": \"111.com\",\n            \"createTime\": \"2022-05-17T09:21:33.000+0000\",\n            \"updateTime\": \"2022-05-17T09:21:35.000+0000\"\n        },\n        \"modelYear\": 2077,\n        \"sale\": {\n            \"id\": 1,\n            \"name\": \"Yi\",\n            \"email\": \"Yi@gmail.com\",\n            \"phone\": \"111\",\n            \"webUrl\": \"yi.com\",\n            \"createTime\": \"2022-05-17T09:26:56.000+0000\",\n            \"updateTime\": \"2022-05-17T09:26:57.000+0000\"\n        },\n        \"brand\": \"ios\",\n        \"createTime\": \"2022-05-23T19:42:09.000+0000\",\n        \"updateTime\": \"2022-05-23T19:42:09.000+0000\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "ProductController/getProductInfo",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0MTAiLCJleHAiOjE2NTM0NDg1MDAsImlhdCI6MTY1MzQxMjUwMH0.6nSF9J6MEZEEUIGvrY4elvWU8b84Tzb4hwT2zywRWHI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8081/joole/ProductController/getProductInfo?ProductId=2",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"joole",
+						"ProductController",
+						"getProductInfo"
+					],
+					"query": [
+						{
+							"key": "ProductId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ProductController/getProductInfo",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8081/joole/ProductController/getProductInfo?ProductId=2",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"joole",
+								"ProductController",
+								"getProductInfo"
+							],
+							"query": [
+								{
+									"key": "ProductId",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 May 2022 17:15:57 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"name\": \"Product2\",\n    \"productType\": {\n        \"id\": 1,\n        \"productTypeDetail\": \"Fans\",\n        \"createTime\": \"2022-05-17T09:15:47.000+0000\"\n    },\n    \"manufacturerDetailId\": {\n        \"id\": 2,\n        \"department\": \"RH\",\n        \"phone\": \"222222\",\n        \"email\": \"rh@gmail.com\",\n        \"webUrl\": \"222.com\",\n        \"createTime\": \"2022-05-17T09:22:00.000+0000\",\n        \"updateTime\": \"2022-05-17T09:22:02.000+0000\"\n    },\n    \"modelYear\": 2021,\n    \"sale\": {\n        \"id\": 2,\n        \"name\": \"vitor\",\n        \"email\": \"vitor@gmail.com\",\n        \"phone\": \"222\",\n        \"webUrl\": \"vitor.com\",\n        \"createTime\": \"2022-05-17T09:27:23.000+0000\",\n        \"updateTime\": \"2022-05-17T09:27:26.000+0000\"\n    },\n    \"brand\": \"Samsung\",\n    \"createTime\": \"2022-05-17T09:32:58.000+0000\",\n    \"updateTime\": \"2022-05-17T09:33:01.000+0000\"\n}"
+				}
+			]
+		},
+		{
+			"name": "ProductController/createProduct",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0MTAiLCJleHAiOjE2NTM0NDk1NzMsImlhdCI6MTY1MzQxMzU3M30.WE4GPzW_CwEfepmmfLZeUy6CsxtsBrfdVAzNcBv1RP8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8081/joole/ProductController/createProduct?Productname=testPost&model_year=2077&brand=ios&product_type_id=1&technical_detail_id=1&manufacturer_detail_id=1&sale_id=1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"joole",
+						"ProductController",
+						"createProduct"
+					],
+					"query": [
+						{
+							"key": "Productname",
+							"value": "testPost"
+						},
+						{
+							"key": "model_year",
+							"value": "2077"
+						},
+						{
+							"key": "brand",
+							"value": "ios"
+						},
+						{
+							"key": "product_type_id",
+							"value": "1"
+						},
+						{
+							"key": "technical_detail_id",
+							"value": "1"
+						},
+						{
+							"key": "manufacturer_detail_id",
+							"value": "1"
+						},
+						{
+							"key": "sale_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ProductController/createProduct",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8081/joole/ProductController/createProduct?Productname=testPost&model_year=2077&brand=ios&product_type_id=1&technical_detail_id=1&manufacturer_detail_id=1&sale_id=1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"joole",
+								"ProductController",
+								"createProduct"
+							],
+							"query": [
+								{
+									"key": "Productname",
+									"value": "testPost"
+								},
+								{
+									"key": "model_year",
+									"value": "2077"
+								},
+								{
+									"key": "brand",
+									"value": "ios"
+								},
+								{
+									"key": "product_type_id",
+									"value": "1"
+								},
+								{
+									"key": "technical_detail_id",
+									"value": "1"
+								},
+								{
+									"key": "manufacturer_detail_id",
+									"value": "1"
+								},
+								{
+									"key": "sale_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 May 2022 17:33:03 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 54,\n    \"name\": \"testPost\",\n    \"productType\": {\n        \"id\": 1,\n        \"productTypeDetail\": \"Fans\",\n        \"createTime\": \"2022-05-17T09:15:47.000+0000\"\n    },\n    \"manufacturerDetailId\": {\n        \"id\": 1,\n        \"department\": \"HR\",\n        \"phone\": \"11111111\",\n        \"email\": \"hr@gmail.com\",\n        \"webUrl\": \"111.com\",\n        \"createTime\": \"2022-05-17T09:21:33.000+0000\",\n        \"updateTime\": \"2022-05-17T09:21:35.000+0000\"\n    },\n    \"modelYear\": 2077,\n    \"sale\": {\n        \"id\": 1,\n        \"name\": \"Yi\",\n        \"email\": \"Yi@gmail.com\",\n        \"phone\": \"111\",\n        \"webUrl\": \"yi.com\",\n        \"createTime\": \"2022-05-17T09:26:56.000+0000\",\n        \"updateTime\": \"2022-05-17T09:26:57.000+0000\"\n    },\n    \"brand\": \"ios\",\n    \"createTime\": \"2022-05-24T17:33:02.934+0000\",\n    \"updateTime\": \"2022-05-24T17:33:02.934+0000\"\n}"
+				}
+			]
+		},
+		{
+			"name": "ProductController/updateProduct",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0MTAiLCJleHAiOjE2NTM0NDk1NzMsImlhdCI6MTY1MzQxMzU3M30.WE4GPzW_CwEfepmmfLZeUy6CsxtsBrfdVAzNcBv1RP8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8081/joole/ProductController/updateProduct?ProductId=5&model_year=2077&brand=NJ",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"joole",
+						"ProductController",
+						"updateProduct"
+					],
+					"query": [
+						{
+							"key": "ProductId",
+							"value": "5"
+						},
+						{
+							"key": "model_year",
+							"value": "2077"
+						},
+						{
+							"key": "brand",
+							"value": "NJ"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ProductController/updateProduct",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8081/joole/ProductController/updateProduct?ProductId=5&model_year=2042&brand=NY",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"joole",
+								"ProductController",
+								"updateProduct"
+							],
+							"query": [
+								{
+									"key": "ProductId",
+									"value": "5"
+								},
+								{
+									"key": "model_year",
+									"value": "2042"
+								},
+								{
+									"key": "brand",
+									"value": "NY"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 May 2022 19:42:13 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "true"
+				}
+			]
+		},
+		{
+			"name": "ProductController/deleteProductByProductId",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0MTAiLCJleHAiOjE2NTM0NDk1NzMsImlhdCI6MTY1MzQxMzU3M30.WE4GPzW_CwEfepmmfLZeUy6CsxtsBrfdVAzNcBv1RP8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8081/joole/ProductController/deleteProductByProductId?ProductId=7",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"joole",
+						"ProductController",
+						"deleteProductByProductId"
+					],
+					"query": [
+						{
+							"key": "ProductId",
+							"value": "7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProductController/getProductTechnicalDetailById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8081/joole/ProductController/getProductTechnicalDetailById?ProductId=1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"joole",
+						"ProductController",
+						"getProductTechnicalDetailById"
+					],
+					"query": [
+						{
+							"key": "ProductId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ProductController/getProductTechnicalDetailById",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8081/joole/ProductController/getProductTechnicalDetailById?ProductId=1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"joole",
+								"ProductController",
+								"getProductTechnicalDetailById"
+							],
+							"query": [
+								{
+									"key": "ProductId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 May 2022 19:42:22 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"productType\": {\n        \"id\": 1,\n        \"productTypeDetail\": \"Fans\",\n        \"createTime\": \"2022-05-17T09:15:47.000+0000\"\n    },\n    \"technicalDetailName\": \"airflow\",\n    \"technicalDetailNumber\": 5000,\n    \"createTime\": \"2022-05-17T09:23:17.000+0000\",\n    \"updateTime\": \"2022-05-17T09:23:19.000+0000\"\n}"
+				}
+			]
+		},
+		{
+			"name": "ProductController/getManufacturerByProductId",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0MTAiLCJleHAiOjE2NTM0NDk1NzMsImlhdCI6MTY1MzQxMzU3M30.WE4GPzW_CwEfepmmfLZeUy6CsxtsBrfdVAzNcBv1RP8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8081/joole/ProductController/getManufacturerByProductId?ProductId=1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"joole",
+						"ProductController",
+						"getManufacturerByProductId"
+					],
+					"query": [
+						{
+							"key": "ProductId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ProductController/getManufacturerByProductId",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8081/joole/ProductController/getManufacturerByProductId?ProductId=1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"joole",
+								"ProductController",
+								"getManufacturerByProductId"
+							],
+							"query": [
+								{
+									"key": "ProductId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 May 2022 17:40:01 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"department\": \"HR\",\n    \"phone\": \"11111111\",\n    \"email\": \"hr@gmail.com\",\n    \"webUrl\": \"111.com\",\n    \"createTime\": \"2022-05-17T09:21:33.000+0000\",\n    \"updateTime\": \"2022-05-17T09:21:35.000+0000\"\n}"
+				}
+			]
+		},
+		{
+			"name": "ProductController/getSaleByProductId",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0MTAiLCJleHAiOjE2NTM0NDk1NzMsImlhdCI6MTY1MzQxMzU3M30.WE4GPzW_CwEfepmmfLZeUy6CsxtsBrfdVAzNcBv1RP8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8081/joole/ProductController/getSaleByProductId?ProductId=1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"joole",
+						"ProductController",
+						"getSaleByProductId"
+					],
+					"query": [
+						{
+							"key": "ProductId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ProductController/getSaleByProductId",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8081/joole/ProductController/getSaleByProductId?ProductId=1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"joole",
+								"ProductController",
+								"getSaleByProductId"
+							],
+							"query": [
+								{
+									"key": "ProductId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 May 2022 17:40:33 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"Yi\",\n    \"email\": \"Yi@gmail.com\",\n    \"phone\": \"111\",\n    \"webUrl\": \"yi.com\",\n    \"createTime\": \"2022-05-17T09:26:56.000+0000\",\n    \"updateTime\": \"2022-05-17T09:26:57.000+0000\"\n}"
+				}
+			]
+		},
+		{
+			"name": "ProductController/getAllProductFromProductTypeAndTechnicalDetailAndModelYearAndBrand",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8081/joole/ProductController/getAllProductFromProductTypeAndTechnicalDetailAndModelYearAndBrand?name=Fans&techicalDetailId=1&modelYear=2000&brand=Apple",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"joole",
+						"ProductController",
+						"getAllProductFromProductTypeAndTechnicalDetailAndModelYearAndBrand"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Fans"
+						},
+						{
+							"key": "techicalDetailId",
+							"value": "1"
+						},
+						{
+							"key": "modelYear",
+							"value": "2000"
+						},
+						{
+							"key": "brand",
+							"value": "Apple"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ProductController/getAllProductFromProductTypeAndTechnicalDetailAndModelYearAndBrand",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8081/joole/ProductController/getAllProductFromProductTypeAndTechnicalDetailAndModelYearAndBrand?name=Fans&techicalDetailId=1&modelYear=2000&brand=Apple",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"joole",
+								"ProductController",
+								"getAllProductFromProductTypeAndTechnicalDetailAndModelYearAndBrand"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Fans"
+								},
+								{
+									"key": "techicalDetailId",
+									"value": "1"
+								},
+								{
+									"key": "modelYear",
+									"value": "2000"
+								},
+								{
+									"key": "brand",
+									"value": "Apple"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 May 2022 19:42:39 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Product1\",\n        \"productType\": {\n            \"id\": 1,\n            \"productTypeDetail\": \"Fans\",\n            \"createTime\": \"2022-05-17T09:15:47.000+0000\"\n        },\n        \"technicalDetail\": {\n            \"id\": 1,\n            \"productType\": {\n                \"id\": 1,\n                \"productTypeDetail\": \"Fans\",\n                \"createTime\": \"2022-05-17T09:15:47.000+0000\"\n            },\n            \"technicalDetailName\": \"airflow\",\n            \"technicalDetailNumber\": 5000,\n            \"createTime\": \"2022-05-17T09:23:17.000+0000\",\n            \"updateTime\": \"2022-05-17T09:23:19.000+0000\"\n        },\n        \"manufacturerDetailId\": {\n            \"id\": 1,\n            \"department\": \"HR\",\n            \"phone\": \"11111111\",\n            \"email\": \"hr@gmail.com\",\n            \"webUrl\": \"111.com\",\n            \"createTime\": \"2022-05-17T09:21:33.000+0000\",\n            \"updateTime\": \"2022-05-17T09:21:35.000+0000\"\n        },\n        \"modelYear\": 2000,\n        \"sale\": {\n            \"id\": 1,\n            \"name\": \"Yi\",\n            \"email\": \"Yi@gmail.com\",\n            \"phone\": \"111\",\n            \"webUrl\": \"yi.com\",\n            \"createTime\": \"2022-05-17T09:26:56.000+0000\",\n            \"updateTime\": \"2022-05-17T09:26:57.000+0000\"\n        },\n        \"brand\": \"Apple\",\n        \"createTime\": \"2022-05-17T09:15:14.000+0000\",\n        \"updateTime\": \"2022-05-17T09:15:17.000+0000\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "/userController/usersLogin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8081/joole/userController/usersLogin?username=test1&password=test1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"joole",
+						"userController",
+						"usersLogin"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "test1"
+						},
+						{
+							"key": "password",
+							"value": "test1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/userController/usersLogin",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8081/joole/userController/usersLogin?username=test1&password=test1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"joole",
+								"userController",
+								"usersLogin"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "test1"
+								},
+								{
+									"key": "password",
+									"value": "test1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 May 2022 19:42:02 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "true"
+				}
+			]
+		},
+		{
+			"name": "userController/authenticate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8081/joole/userController/authenticate?username=test10&password=test10",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"joole",
+						"userController",
+						"authenticate"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "test10"
+						},
+						{
+							"key": "password",
+							"value": "test10"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "userController/authenticate",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8081/joole/userController/authenticate?username=test10&password=test10",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"joole",
+								"userController",
+								"authenticate"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "test10"
+								},
+								{
+									"key": "password",
+									"value": "test10"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "132"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 May 2022 11:17:41 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0MTAiLCJleHAiOjE2NTM0MjcwNjEsImlhdCI6MTY1MzM5MTA2MX0.vNImpq9OZEz4zvTJjgLmfQ_I6og8YyvupLq6htyMjkE"
+				},
+				{
+					"name": "userController/authenticate",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8081/joole/userController/authenticate?username=test15&password=test15",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"joole",
+								"userController",
+								"authenticate"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "test15"
+								},
+								{
+									"key": "password",
+									"value": "test15"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "132"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 May 2022 13:52:55 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0MTUiLCJleHAiOjE2NTM0MzYzNzUsImlhdCI6MTY1MzQwMDM3NX0.t8LXnNhr1zAXeex5LOq_RtDORREO2KPSd3Py3-BU67g"
+				},
+				{
+					"name": "userController/authenticate",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8081/joole/userController/authenticate?username=manutest1&password=manutest1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"joole",
+								"userController",
+								"authenticate"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "manutest1"
+								},
+								{
+									"key": "password",
+									"value": "manutest1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "136"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 May 2022 17:11:32 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW51dGVzdDEiLCJleHAiOjE2NTM0NDgyOTIsImlhdCI6MTY1MzQxMjI5Mn0.PQRr0wOg027fHmCPuogMqyYLUVloinN-0qbJG-1BsL0"
+				}
+			]
+		},
+		{
+			"name": "/userController/createUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8081/joole/userController/createUser?username=test15&password=test15",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"joole",
+						"userController",
+						"createUser"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "test15"
+						},
+						{
+							"key": "password",
+							"value": "test15"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/userController/createUser",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\n{\n    \"username\" : \"test10\",\n    \"password\" : \"test10\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:8081/joole/userController/createUser",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"joole",
+								"userController",
+								"createUser"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 May 2022 02:58:16 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 42,\n    \"userName\": null,\n    \"password\": \"$2a$10$wCV4C0iLeNsNAD1wzAX6P.3iwZh98BrUHaZX4JX14C0wIt8nIY7LS\",\n    \"name\": null,\n    \"profilePictureUrl\": null,\n    \"createTime\": null,\n    \"updateTime\": null,\n    \"role\": \"ADMIN\"\n}"
+				},
+				{
+					"name": "/userController/createUser",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:8081/joole/userController/createUser?username=test15&password=test15",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"joole",
+								"userController",
+								"createUser"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "test15"
+								},
+								{
+									"key": "password",
+									"value": "test15"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 May 2022 13:52:06 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 47,\n    \"username\": \"test15\",\n    \"password\": \"$2a$10$edRRVzcbEahjouLQ5MYY2uISb0JAB3bkL3LQgtl3fuadHW6eNHZ.y\",\n    \"name\": null,\n    \"profilePictureUrl\": null,\n    \"createTime\": null,\n    \"updateTime\": null,\n    \"role\": \"ROLE_USER\"\n}"
+				}
+			]
+		},
+		{
+			"name": "userController/user/usersFindUserById",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0MTUiLCJleHAiOjE2NTM0MzYzNzUsImlhdCI6MTY1MzQwMDM3NX0.t8LXnNhr1zAXeex5LOq_RtDORREO2KPSd3Py3-BU67g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8081/joole/userController/user/usersFindUserById?id=47",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"joole",
+						"userController",
+						"user",
+						"usersFindUserById"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "47"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/userController/user/usersUpdate?",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0MTVBIiwiZXhwIjoxNjUzNDM3OTQxLCJpYXQiOjE2NTM0MDE5NDF9.S9VYD42GX18mYroImfCHXrJa5_2zYk4FaHh7UEZ_o24",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8081/joole/userController/user/usersUpdate?id=47&username=test15B&name=goodname11&profilePic=url11&=",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"joole",
+						"userController",
+						"user",
+						"usersUpdate"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "47"
+						},
+						{
+							"key": "username",
+							"value": "test15B"
+						},
+						{
+							"key": "name",
+							"value": "goodname11"
+						},
+						{
+							"key": "profilePic",
+							"value": "url11"
+						},
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/userController/user/usersUpdate?",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8081/joole/userController/user/usersUpdate?id=47&username=test15B&name=goodname11&profilePic=url11&=",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"joole",
+								"userController",
+								"user",
+								"usersUpdate"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "47"
+								},
+								{
+									"key": "username",
+									"value": "test15B"
+								},
+								{
+									"key": "name",
+									"value": "goodname11"
+								},
+								{
+									"key": "profilePic",
+									"value": "url11"
+								},
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 May 2022 14:19:12 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "true"
+				}
+			]
+		},
+		{
+			"name": "userController/usersLogout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW51dGVzdDEiLCJleHAiOjE2NTM0NDg0MjMsImlhdCI6MTY1MzQxMjQyM30.TOxxmNf52nR0pVVfqmV41Ja6ejjeyRCJ8XQRmElTFE4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8081/joole/userController/usersLogout",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"joole",
+						"userController",
+						"usersLogout"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "userController/usersLogout",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8081/joole/userController/usersLogout",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"joole",
+								"userController",
+								"usersLogout"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 May 2022 17:13:53 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "true"
+				}
+			]
+		},
+		{
+			"name": "/userController/createManufacturer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8081/joole/userController/createManufacturer?username=manutest1&password=manutest1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"joole",
+						"userController",
+						"createManufacturer"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "manutest1"
+						},
+						{
+							"key": "password",
+							"value": "manutest1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/userController/createManufacturer",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8081/joole/userController/createManufacturer?username=manutest1&password=manutest1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"joole",
+								"userController",
+								"createManufacturer"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "manutest1"
+								},
+								{
+									"key": "password",
+									"value": "manutest1"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 May 2022 17:11:00 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 48,\n    \"username\": \"manutest1\",\n    \"password\": \"$2a$10$qUIy4mSvVyXzh7kG8G.AvuzxCAlCGro2lIkj/ox.ettxaWMh7OUBO\",\n    \"name\": null,\n    \"profilePictureUrl\": null,\n    \"createTime\": null,\n    \"updateTime\": null,\n    \"role\": \"ROLE_MANUFACTURER\"\n}"
+				}
+			]
+		},
+		{
+			"name": "projectController/getAllProject",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0MTAiLCJleHAiOjE2NTM0NTQ3MzcsImlhdCI6MTY1MzQxODczN30.0eW3gKbh0mP6YEWaHa0XaP8jwoiwaswsXtxP5SU99Og",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8081/joole/projectController/getAllProject",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"joole",
+						"projectController",
+						"getAllProject"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "projectController/getAllProject",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8081/joole/projectController/getAllProject",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"joole",
+								"projectController",
+								"getAllProject"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 May 2022 18:59:09 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"projectName\": \"ProjectTestChange1\",\n        \"user\": {\n            \"id\": 49,\n            \"username\": \"b\",\n            \"password\": \"x\",\n            \"name\": \"q\",\n            \"profilePictureUrl\": null,\n            \"createTime\": null,\n            \"updateTime\": null,\n            \"role\": null\n        },\n        \"createTime\": null,\n        \"updateTime\": \"2022-05-24T18:55:57.000+0000\"\n    },\n    {\n        \"id\": 2,\n        \"projectName\": \"ProjectTest2\",\n        \"user\": {\n            \"id\": 8,\n            \"username\": \"name\",\n            \"password\": \"password\",\n            \"name\": null,\n            \"profilePictureUrl\": null,\n            \"createTime\": null,\n            \"updateTime\": null,\n            \"role\": null\n        },\n        \"createTime\": null,\n        \"updateTime\": null\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "projectController/getOneProject",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0MTAiLCJleHAiOjE2NTM0NTQ4NzMsImlhdCI6MTY1MzQxODg3M30.FZP2LJ0_Bx3m3HCblblXMTg21bAOPIWF17DKJjqsDvw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8081/joole/projectController/getOneProject?id=1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"joole",
+						"projectController",
+						"getOneProject"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "projectController/getOneProject",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8081/joole/projectController/getOneProject?id=1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"joole",
+								"projectController",
+								"getOneProject"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 May 2022 19:01:42 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"projectName\": \"ProjectTestChange1\",\n    \"user\": {\n        \"id\": 49,\n        \"username\": \"b\",\n        \"password\": \"x\",\n        \"name\": \"q\",\n        \"profilePictureUrl\": null,\n        \"createTime\": null,\n        \"updateTime\": null,\n        \"role\": null\n    },\n    \"createTime\": null,\n    \"updateTime\": \"2022-05-24T18:55:57.000+0000\"\n}"
+				}
+			]
+		},
+		{
+			"name": "/projectController/create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0MTAiLCJleHAiOjE2NTM0NTUwMjQsImlhdCI6MTY1MzQxOTAyNH0.fNbQ66VSMrJ7cPYggclkCsY_7sBC5uJS9T6FrpnT9IE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8081/joole/projectController/create?projectName=test3&user_Id=8",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"joole",
+						"projectController",
+						"create"
+					],
+					"query": [
+						{
+							"key": "projectName",
+							"value": "test3"
+						},
+						{
+							"key": "user_Id",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/projectController/create",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8081/joole/projectController/create?projectName=test3&user_Id=8",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"joole",
+								"projectController",
+								"create"
+							],
+							"query": [
+								{
+									"key": "projectName",
+									"value": "test3"
+								},
+								{
+									"key": "user_Id",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 May 2022 19:03:53 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "true"
+				}
+			]
+		},
+		{
+			"name": "/projectController/update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0MTAiLCJleHAiOjE2NTM0NTUwMjQsImlhdCI6MTY1MzQxOTAyNH0.fNbQ66VSMrJ7cPYggclkCsY_7sBC5uJS9T6FrpnT9IE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8081/joole/projectController/update?id=3&projectName=testChange3",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"joole",
+						"projectController",
+						"update"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						},
+						{
+							"key": "projectName",
+							"value": "testChange3"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/projectController/update",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8081/joole/projectController/update?id=3&projectName=testChange3",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"joole",
+								"projectController",
+								"update"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								},
+								{
+									"key": "projectName",
+									"value": "testChange3"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 May 2022 19:05:18 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "true"
+				}
+			]
+		},
+		{
+			"name": "/projectController/delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0MTAiLCJleHAiOjE2NTM0NTUwMjQsImlhdCI6MTY1MzQxOTAyNH0.fNbQ66VSMrJ7cPYggclkCsY_7sBC5uJS9T6FrpnT9IE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8081/joole/projectController/delete?id=3",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"joole",
+						"projectController",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/projectController/delete",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8081/joole/projectController/delete?id=3",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"joole",
+								"projectController",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 May 2022 19:07:29 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "true"
+				}
+			]
+		},
+		{
+			"name": "/projectController/findProjectsFromUser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0MTAiLCJleHAiOjE2NTM0NjAyMjcsImlhdCI6MTY1MzQyNDIyN30.VqDjUq9AHYravqV_3ZfqBz_BALFaonfpQaUrjHOVWjA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8081/joole/projectController/findProjectsFromUser?id=8",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"joole",
+						"projectController",
+						"findProjectsFromUser"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/projectController/findProjectsFromUser",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8081/joole/projectController/findProjectsFromUser?id=8",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"joole",
+								"projectController",
+								"findProjectsFromUser"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 May 2022 20:30:34 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 2,\n        \"projectName\": \"ProjectTest2\",\n        \"user\": {\n            \"id\": 8,\n            \"username\": \"name\",\n            \"password\": \"password\",\n            \"name\": null,\n            \"profilePictureUrl\": null,\n            \"createTime\": null,\n            \"updateTime\": null,\n            \"role\": null\n        },\n        \"createTime\": null,\n        \"updateTime\": null\n    },\n    {\n        \"id\": 3,\n        \"projectName\": \"ProjectTest2\",\n        \"user\": {\n            \"id\": 8,\n            \"username\": \"name\",\n            \"password\": \"password\",\n            \"name\": null,\n            \"profilePictureUrl\": null,\n            \"createTime\": null,\n            \"updateTime\": null,\n            \"role\": null\n        },\n        \"createTime\": null,\n        \"updateTime\": null\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "/projectController/findProductsFromProject",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0MTAiLCJleHAiOjE2NTM0NjExNjQsImlhdCI6MTY1MzQyNTE2NH0.ZQV0grZZMl7g4DTefBpZetLmX0t_mk0yhNPgH2LULOM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8081/joole/projectController/findProductsFromProject?id=2",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"joole",
+						"projectController",
+						"findProductsFromProject"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/projectController/findProductsFromProject",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8081/joole/projectController/findProductsFromProject?id=2",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"joole",
+								"projectController",
+								"findProductsFromProject"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 May 2022 20:46:11 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Product1\",\n        \"productType\": {\n            \"id\": 1,\n            \"productTypeDetail\": \"Fans\",\n            \"createTime\": \"2022-05-17T09:15:47.000+0000\"\n        },\n        \"manufacturerDetailId\": {\n            \"id\": 1,\n            \"department\": \"HR\",\n            \"phone\": \"11111111\",\n            \"email\": \"hr@gmail.com\",\n            \"webUrl\": \"111.com\",\n            \"createTime\": \"2022-05-17T09:21:33.000+0000\",\n            \"updateTime\": \"2022-05-17T09:21:35.000+0000\"\n        },\n        \"modelYear\": 2000,\n        \"sale\": {\n            \"id\": 1,\n            \"name\": \"Yi\",\n            \"email\": \"Yi@gmail.com\",\n            \"phone\": \"111\",\n            \"webUrl\": \"yi.com\",\n            \"createTime\": \"2022-05-17T09:26:56.000+0000\",\n            \"updateTime\": \"2022-05-17T09:26:57.000+0000\"\n        },\n        \"brand\": \"Apple\",\n        \"createTime\": \"2022-05-17T09:15:14.000+0000\",\n        \"updateTime\": \"2022-05-17T09:15:17.000+0000\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "/userController/passwordUpdate",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0MTQiLCJleHAiOjE2NTM0NjIxMDksImlhdCI6MTY1MzQyNjEwOX0.12tf4GkdWxVnEB4l5DN5Xg9arzKlOp-sb9JOs4pEq_c",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8081/joole/userController/passwordUpdate?id=42&oldPassword=test10A&newPassword=test10",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"joole",
+						"userController",
+						"passwordUpdate"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "42"
+						},
+						{
+							"key": "oldPassword",
+							"value": "test10A"
+						},
+						{
+							"key": "newPassword",
+							"value": "test10"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/userController/passwordUpdate",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8081/joole/userController/passwordUpdate?id=42&oldPassword=test10A&newPassword=test10",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"joole",
+								"userController",
+								"passwordUpdate"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "42"
+								},
+								{
+									"key": "oldPassword",
+									"value": "test10A"
+								},
+								{
+									"key": "newPassword",
+									"value": "test10"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 May 2022 21:09:04 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "true"
+				}
+			]
+		}
+	]
+}
