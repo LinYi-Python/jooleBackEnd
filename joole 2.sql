@@ -11,7 +11,7 @@
  Target Server Version : 80029
  File Encoding         : 65001
 
- Date: 13/06/2022 15:21:40
+ Date: 09/06/2022 11:10:28
 */
 
 SET NAMES utf8mb4;
@@ -29,14 +29,14 @@ CREATE TABLE `hibernate_sequence` (
 -- Records of hibernate_sequence
 -- ----------------------------
 BEGIN;
-INSERT INTO `hibernate_sequence` (`next_val`) VALUES (50);
-INSERT INTO `hibernate_sequence` (`next_val`) VALUES (50);
-INSERT INTO `hibernate_sequence` (`next_val`) VALUES (50);
-INSERT INTO `hibernate_sequence` (`next_val`) VALUES (50);
-INSERT INTO `hibernate_sequence` (`next_val`) VALUES (50);
-INSERT INTO `hibernate_sequence` (`next_val`) VALUES (50);
-INSERT INTO `hibernate_sequence` (`next_val`) VALUES (50);
-INSERT INTO `hibernate_sequence` (`next_val`) VALUES (50);
+INSERT INTO `hibernate_sequence` (`next_val`) VALUES (44);
+INSERT INTO `hibernate_sequence` (`next_val`) VALUES (44);
+INSERT INTO `hibernate_sequence` (`next_val`) VALUES (44);
+INSERT INTO `hibernate_sequence` (`next_val`) VALUES (44);
+INSERT INTO `hibernate_sequence` (`next_val`) VALUES (44);
+INSERT INTO `hibernate_sequence` (`next_val`) VALUES (44);
+INSERT INTO `hibernate_sequence` (`next_val`) VALUES (44);
+INSERT INTO `hibernate_sequence` (`next_val`) VALUES (44);
 COMMIT;
 
 -- ----------------------------
@@ -92,8 +92,8 @@ CREATE TABLE `product` (
 -- ----------------------------
 BEGIN;
 INSERT INTO `product` (`id`, `brand`, `create_time`, `model_year`, `name`, `update_time`, `manufacturer_detail_id_id`, `product_type_id`, `sale_id`) VALUES (1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO `product` (`id`, `brand`, `create_time`, `model_year`, `name`, `update_time`, `manufacturer_detail_id_id`, `product_type_id`, `sale_id`) VALUES (2, 'Meta1', '2022-05-27 01:31:03.390503', 2022, 'Test1', '2022-05-27 01:31:03.390503', NULL, NULL, NULL);
-INSERT INTO `product` (`id`, `brand`, `create_time`, `model_year`, `name`, `update_time`, `manufacturer_detail_id_id`, `product_type_id`, `sale_id`) VALUES (14, 'Meta2', '2022-05-27 01:32:04.053439', 2022, 'Test1', '2022-05-27 01:32:04.053439', NULL, 1, NULL);
+INSERT INTO `product` (`id`, `brand`, `create_time`, `model_year`, `name`, `update_time`, `manufacturer_detail_id_id`, `product_type_id`, `sale_id`) VALUES (2, 'Meta', '2022-05-27 01:31:03.390503', 2022, 'Test1', '2022-05-27 01:31:03.390503', NULL, NULL, NULL);
+INSERT INTO `product` (`id`, `brand`, `create_time`, `model_year`, `name`, `update_time`, `manufacturer_detail_id_id`, `product_type_id`, `sale_id`) VALUES (14, 'Meta', '2022-05-27 01:32:04.053439', 2022, 'Test1', '2022-05-27 01:32:04.053439', NULL, NULL, NULL);
 INSERT INTO `product` (`id`, `brand`, `create_time`, `model_year`, `name`, `update_time`, `manufacturer_detail_id_id`, `product_type_id`, `sale_id`) VALUES (19, 'Meta', '2022-05-27 01:33:39.163458', 2022, 'Test1', '2022-05-27 01:33:39.216807', NULL, 20, NULL);
 INSERT INTO `product` (`id`, `brand`, `create_time`, `model_year`, `name`, `update_time`, `manufacturer_detail_id_id`, `product_type_id`, `sale_id`) VALUES (24, 'Meta', '2022-05-27 01:54:22.809011', 2022, 'Test1', '2022-05-27 01:54:22.878004', 26, 25, 27);
 INSERT INTO `product` (`id`, `brand`, `create_time`, `model_year`, `name`, `update_time`, `manufacturer_detail_id_id`, `product_type_id`, `sale_id`) VALUES (29, 'Meta', '2022-05-27 02:02:59.237350', 2022, 'Test1', '2022-05-27 02:02:59.304089', 31, 30, 32);
@@ -116,8 +116,8 @@ CREATE TABLE `product_type` (
 -- ----------------------------
 BEGIN;
 INSERT INTO `product_type` (`id`, `create_time`, `product_type_detail`) VALUES (1, '2022-05-27 01:32:04.068943', 'TypeTest1');
-INSERT INTO `product_type` (`id`, `create_time`, `product_type_detail`) VALUES (20, '2022-05-27 01:33:39.175313', 'TypeTest2');
-INSERT INTO `product_type` (`id`, `create_time`, `product_type_detail`) VALUES (25, '2022-05-27 01:54:22.822315', 'TypeTest3');
+INSERT INTO `product_type` (`id`, `create_time`, `product_type_detail`) VALUES (20, '2022-05-27 01:33:39.175313', 'TypeTest1');
+INSERT INTO `product_type` (`id`, `create_time`, `product_type_detail`) VALUES (25, '2022-05-27 01:54:22.822315', 'TypeTest1');
 INSERT INTO `product_type` (`id`, `create_time`, `product_type_detail`) VALUES (30, '2022-05-27 02:02:59.251210', 'TypeTest1');
 COMMIT;
 
@@ -245,12 +245,6 @@ INSERT INTO `user` (`id`, `create_time`, `name`, `password`, `profile_picture_ur
 INSERT INTO `user` (`id`, `create_time`, `name`, `password`, `profile_picture_url`, `role`, `update_time`, `username`) VALUES (34, '2022-05-27 02:17:12.187822', NULL, '$2a$10$pcH/dG.Ii3HMP/l4zYFKquIxsxmPaLnD342W.PUCYwHKe6BkAeeFu', NULL, 'ROLE_USER', '2022-05-27 02:17:12.187822', 'test3');
 INSERT INTO `user` (`id`, `create_time`, `name`, `password`, `profile_picture_url`, `role`, `update_time`, `username`) VALUES (35, '2022-05-27 02:35:10.683269', NULL, '$2a$10$8BTwDQQz8z00v7zncI5tJu3dZOZ/Oa0Mgb3aQKsnt.piUkSkmUvAi', NULL, 'ROLE_MANUFACTURER', '2022-05-27 02:35:10.683269', 'test5');
 INSERT INTO `user` (`id`, `create_time`, `name`, `password`, `profile_picture_url`, `role`, `update_time`, `username`) VALUES (36, '2022-05-27 02:36:52.946104', NULL, '$2a$10$ClPrBqxvkMw5AHHyLzv4Bun/s4.iO.rI78LGgc8PePVFHlZAjnp/i', NULL, 'ROLE_ADMIN', '2022-05-27 02:36:52.946104', 'test4');
-INSERT INTO `user` (`id`, `create_time`, `name`, `password`, `profile_picture_url`, `role`, `update_time`, `username`) VALUES (44, '2022-06-09 23:53:15.093352', NULL, '$2a$10$pdy0dyy9BzCsezWmMTlJEuzlZ595OTacDVbiBTd37XjEvQS8KD4FW', NULL, 'ROLE_USER', '2022-06-09 23:53:15.093352', 'test6');
-INSERT INTO `user` (`id`, `create_time`, `name`, `password`, `profile_picture_url`, `role`, `update_time`, `username`) VALUES (45, '2022-06-10 13:52:19.870535', NULL, '$2a$10$deSJ7eDNknbUAb27xYx84e0yUmawULTm8DkSr95sO6b1EHwCbNWbW', NULL, 'ROLE_USER', '2022-06-10 13:52:19.870535', 'test7');
-INSERT INTO `user` (`id`, `create_time`, `name`, `password`, `profile_picture_url`, `role`, `update_time`, `username`) VALUES (46, '2022-06-10 14:10:21.962614', NULL, '$2a$10$g7nonE0tQXobIjTWGev2jOYGn6W5/2QGzR6e44r12iDovP5wv36fC', NULL, 'ROLE_USER', '2022-06-10 14:10:21.962614', 'test8');
-INSERT INTO `user` (`id`, `create_time`, `name`, `password`, `profile_picture_url`, `role`, `update_time`, `username`) VALUES (47, '2022-06-10 14:15:54.665389', NULL, '$2a$10$kHDbtsBXzwM6zKqgiLUKUunqdCtdACeKaLSWyQmFwRJtnpyHQxg/a', NULL, 'ROLE_USER', '2022-06-10 14:15:54.665389', 'test9');
-INSERT INTO `user` (`id`, `create_time`, `name`, `password`, `profile_picture_url`, `role`, `update_time`, `username`) VALUES (48, '2022-06-13 16:06:27.707260', NULL, '$2a$10$GTM6PFd71SCJj/vo7R3UQepld59XtQdvtAIl9byNvBgNHoHQdQkIy', NULL, 'ROLE_USER', '2022-06-13 16:06:27.707260', 'test10');
-INSERT INTO `user` (`id`, `create_time`, `name`, `password`, `profile_picture_url`, `role`, `update_time`, `username`) VALUES (49, '2022-06-13 17:43:02.961353', NULL, '$2a$10$AVu7S/fq7D.ytWBbeCZbK.2NJzZl9f4OTmkoYowx5jbmf50WJKaYu', NULL, 'ROLE_USER', '2022-06-13 17:43:02.961353', 'test11');
 COMMIT;
 
 SET FOREIGN_KEY_CHECKS = 1;

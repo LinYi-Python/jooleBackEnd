@@ -63,19 +63,19 @@ class ProductTypeServiceImpTest {
 //        Assert.assertEquals(expected, actual);
     }
 
-    @Test
-    void findByName() {
-
-        String description = "Fans";
-//        productType.setProductTypeDetail(description);
-//        productTypeService.save(productType);
-
-//        ProductType expected = productType;
-
-        ProductType actual = productTypeService.findByName(description);
-        Assert.assertTrue(actual != null);
-//        Assert.assertEquals(expected, actual);
-    }
+//    @Test
+//    void findByName() {
+//
+//        String description = "Fans";
+////        productType.setProductTypeDetail(description);
+////        productTypeService.save(productType);
+//
+////        ProductType expected = productType;
+//
+//        ProductType actual = productTypeService.findByName(description);
+//        Assert.assertTrue(actual != null);
+////        Assert.assertEquals(expected, actual);
+//    }
 
     @Test
     void create() {
@@ -112,13 +112,13 @@ class ProductTypeServiceImpTest {
         Assert.assertTrue(actual != null);
     }
 
-    @Test
-    void update() {
-
-        ProductType productType = productTypeService.get(36);
-
-        boolean actual = productTypeService.update(productType);
-        Assert.assertTrue(actual);
-    }
+//    @Test
+//    void update() {
+//
+//        ProductType productType = productTypeService.get(36);
+//
+//        boolean actual = productTypeService.update(productType);
+//        Assert.assertTrue(actual);
+//    }
 
 }

@@ -23,7 +23,6 @@ import java.util.List;
  * @Version 1.0
  **/
 
-
 @EntityListeners(AuditingEntityListener.class)
 @Entity(name = "project")
 public class Project {

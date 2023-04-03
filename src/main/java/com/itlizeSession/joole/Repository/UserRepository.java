@@ -25,4 +25,6 @@ public interface UserRepository extends JpaRepository<User, Integer> {
 //    //addProject
 //    User addProject(Project project, User user);
     Optional<User> findByUsername(String username);
+
+
 }

@@ -4,6 +4,7 @@ import com.itlizeSession.joole.Entity.*;
 import com.itlizeSession.joole.Service.*;
 
 import com.itlizeSession.joole.Util.JwtUtil;
+import com.itlizeSession.joole.Vo.JWT;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,7 +16,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
 
 import java.sql.Timestamp;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @ClassName ProductController
@@ -181,8 +184,13 @@ public class UserController {
                   .loadUserByUsername(username);
 
           final String jwt = jwtTokenUtil.generateToken(userDetails);
+          Map<String, Object> map = new HashMap<>();
+          map.put("token", jwt);
+//          return  new ResponseEntity<>(jwt, HttpStatus.OK);
+//          JWT jwtObject = new JWT(jwt);
+          return  new ResponseEntity<>(map, HttpStatus.OK);
+//          return  new ResponseEntity<>(jwtObject, HttpStatus.OK);
 
-          return  new ResponseEntity<>(jwt, HttpStatus.OK);
 
      }
 
